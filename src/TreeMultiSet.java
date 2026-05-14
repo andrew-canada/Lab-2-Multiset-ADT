@@ -19,8 +19,8 @@ public class TreeMultiSet extends MultiSet {
         return tree.contains(item);
     }
 
-    boolean is_empty() {
-        return tree.is_empty();
+    boolean isEmpty() {
+        return tree.isEmpty();
     }
 
     int count(Integer item) {
