@@ -3,7 +3,6 @@ import java.util.ArrayList;
 public class Tree {
     private Integer root;
     private ArrayList<Tree> subtrees;
-    private int size;
 
     public Tree(Integer root) {
         this.root = root;
@@ -50,9 +49,20 @@ public class Tree {
         return this.toString(0);
     }
 
-    public String toString(int depth) {
+    private String toString(int depth) {
         if(this.isEmpty()) {
+            return "";
+        } else {
+            String s = "";
+            // TODO: complete this method.
+        }
+    }
 
+    public double average() {
+        if(this.isEmpty()) {
+            return 0.0;
+        } else {
+            // TODO: complete this method
         }
     }
 
