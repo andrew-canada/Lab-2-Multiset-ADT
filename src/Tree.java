@@ -84,24 +84,3 @@ public class Tree {
         }
     }
 
-    def insert_child(self, item: int, parent: int) -> bool:
-            """Insert <item> into this tree as a child of <parent>.
-
-        If successful, return True. If <parent> is not in this tree,
-        return False.
-
-        If <parent> appears more than once in this tree, <item> should only
-        be inserted once (you can pick where to insert it).
-        """
-            if self.is_empty():
-            return False
-    elif self._root == parent:
-            self._subtrees.append(Tree(item, []))
-            return True
-        else:
-                for subtree in self._subtrees:
-            if subtree.insert_child(item, parent):
-            return True
-            return False
-
-}
